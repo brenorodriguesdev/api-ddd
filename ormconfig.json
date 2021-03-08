@@ -1,0 +1,16 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "username": "postgres",
+    "password": "1",
+    "database": "test",
+    "migrations": [
+        "./src/infra/db/migrations/*.ts"
+    ],
+    "entities": [
+        "./src/infra/db/models/*.ts"
+    ],
+    "cli": {
+        "migrationsDir": "./src/infra/db/migrations"
+    }
+}
